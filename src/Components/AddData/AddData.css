@@ -1,0 +1,10 @@
+.add-data-container{
+    width:100%;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.close-button{
+    margin-left: auto;
+}
