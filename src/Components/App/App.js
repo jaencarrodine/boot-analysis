@@ -36,7 +36,7 @@ function App() {
 
   async function getBootData(bootName){
     console.log('getBootData');
-    const bootData = await axios.get(`http://localhost:4000/sheets/getbootdata/${bootName}`)
+    const bootData = await axios.get(`https://boot-analysis-api.herokuapp.com/sheets/getbootdata/${bootName}`)
     .then(function (response) {
       // handle success
       console.log(response);
@@ -56,7 +56,7 @@ function App() {
 
   async function getBootNames(){
 
-    const bootNames = await axios.get(`http://localhost:4000/sheets/getbootnames`)
+    const bootNames = await axios.get(`https://boot-analysis-api.herokuapp.com/sheets/getbootnames`)
     .then(function (response) {
       // handle success
       

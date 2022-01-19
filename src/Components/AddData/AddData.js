@@ -95,7 +95,7 @@ export default function AddData({toggleAddDataActive, triggerBootListUpdate}) {
             data: organizedData
         }
         setLoading(true)
-        axios.post('http://localhost:4000/sheets/upload-data', data)
+        axios.post('https://boot-analysis-api.herokuapp.com/sheets/upload-data', data)
         .then(res => {
             console.log(res.data);
             if(res.data.success){
